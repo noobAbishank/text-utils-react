@@ -3,14 +3,14 @@ import './App.css';
 import { Header } from './Containers/Header'
 import { MyTextArea } from './Containers/MyTextArea';
 import React, { useState } from 'react';
-import {About} from './Containers/About'
+// import {About} from './Containers/About'
 import { Alert } from './Containers/Alert';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
 
-} from "react-router-dom";
+// } from "react-router-dom";
 
 
 
@@ -47,21 +47,21 @@ function App() {
   }
 
   return (
-    
-      <Router>
+    <div>
+//       <Router>
         <Header mode={mode} toggler={toggler} alert={alert} />
-        <Switch>
-          <Route exact path="/">
+//         <Switch>
+//           <Route exact path="/">
             <Alert alert={alert} />
             <MyTextArea heading="Enter the Text to analyze" mode={mode} showAlert={showAlert} />
-          </Route>
-          <Route exact path="/About">
-            <Alert alert={alert} />
-            <About heading="About Us" mode={mode}></About>
-          </Route>
-        </Switch>
-      </Router>
-    
+//           </Route>
+//           <Route exact path="/About">
+//             <Alert alert={alert} />
+//             <About heading="About Us" mode={mode}></About>
+//           </Route>
+//         </Switch>
+//       </Router>
+     </div>
   );
 }
 
