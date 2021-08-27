@@ -47,21 +47,21 @@ function App() {
   }
 
   return (
-    <div>
-//       <Router>
+    <>
+       {/* <Router> */}
         <Header mode={mode} toggler={toggler} alert={alert} />
-//         <Switch>
-//           <Route exact path="/">
+         {/* <Switch> */}
+          {/* <Route exact path="/"> */}
             <Alert alert={alert} />
             <MyTextArea heading="Enter the Text to analyze" mode={mode} showAlert={showAlert} />
-//           </Route>
-//           <Route exact path="/About">
-//             <Alert alert={alert} />
-//             <About heading="About Us" mode={mode}></About>
-//           </Route>
-//         </Switch>
-//       </Router>
-     </div>
+           {/* </Route> */}
+          {/* <Route exact path="/About">
+            <Alert alert={alert} />
+            <About heading="About Us" mode={mode}></About>
+          </Route>
+        </Switch>
+      </Router> */}
+    </>
   );
 }
 
